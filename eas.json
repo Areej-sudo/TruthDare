@@ -1,0 +1,18 @@
+{
+  "cli": { "version": ">= 8.0.0" },
+  "build": {
+    "development": {
+      "android": { "buildType": "apk", "distribution": "internal" },
+      "ios": { "distribution": "internal" }
+    },
+    "production": {
+      "android": { "gradleCommand": ":app:bundleRelease", "distribution": "store" },
+      "ios": { "distribution": "store" }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
+
+
